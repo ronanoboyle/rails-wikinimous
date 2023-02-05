@@ -67,3 +67,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Add gem 'faker'
+gem "faker"
