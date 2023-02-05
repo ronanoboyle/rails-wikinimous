@@ -1,0 +1,21 @@
+<header class="navbar border-bottom">
+  <h4 class="ms-3 p-2"><%= link_to "Wikinimous", articles_path %></h4>
+  <h5 class="me-3 p-2"><%= link_to "New Article", new_article_path %></h5>
+</header>
+
+<div class="container pt-2">
+  <div class="row">
+    <h3 class="text-decoration-none"><%= @article.title %></h3>
+    <small>
+     <a href="<%= edit_article_path(@article.id)%>">
+      <i class="fa fa-pencil"></i>
+     </a>
+    </small>
+
+  </div>
+
+  <p><%= @article.content %></p>
+
+  <hr>
+  <%= link_to "Back to Articles", articles_path %>
+</div>
